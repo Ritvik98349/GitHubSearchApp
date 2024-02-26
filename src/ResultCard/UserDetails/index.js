@@ -21,7 +21,17 @@ function UserDetails({ userId = "", setUserId = () => {}, userData = {} }) {
 
   const handleClose = () => setUserId("");
 
-  if (userData === {} || userData?.bio === "...loading") return null;
+  if (userData === {} || userData?.bio === "...loading")
+    return (
+      <Modal
+        open={userId !== ""}
+        onClose={handleClose}
+        aria-labelledby="parent-modal-title"
+        aria-describedby="parent-modal-description"
+      >
+        <div className={styles.modal}>...loading</div>
+      </Modal>
+    );
 
   return (
     <Modal
