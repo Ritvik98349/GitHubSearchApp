@@ -6,7 +6,7 @@ function getUserData() {
     url: `https://api.github.com/users/${val}`,
     headers: {
       Accept: "application/vnd.github+json",
-      Authorization: "Bearer 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",
+      Authorization: "Bearer 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",
       "X-GitHub-Api-Version": "2022-11-28",
     },
   });
