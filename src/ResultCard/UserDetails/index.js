@@ -1,7 +1,6 @@
 import { Modal } from "@mui/material";
 import React from "react";
 import styles from "./styles.module.css";
-import { IoIosArrowBack } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { FaBloggerB } from "react-icons/fa";
