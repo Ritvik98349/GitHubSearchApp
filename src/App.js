@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Header from "./Header";
+import ResultCard from "./ResultCard";
+import styles from "./styles.module.css";
+import getData from "./hooks/getData";
 
 function App() {
+  const [val, setVal] = useState("");
+  const [data, setData] = useState({});
+
+  const { apiCall = () => {} } = getData();
+
+  useEffect(() => {
+    if (val) {
+      apiCall(val, setData);
+    }
+  }, [apiCall, val, setData]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <Header val={val} setVal={setVal} />
+
+      <ResultCard data={data} />
     </div>
   );
 }

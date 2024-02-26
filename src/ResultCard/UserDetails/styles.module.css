@@ -1,0 +1,85 @@
+.modal {
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  margin: auto;
+  height: 420px;
+  width: 400px;
+  overflow: auto;
+  border-radius: 8px;
+  padding: 16px 16px 0;
+  background-color: #fff;
+}
+
+.header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding-bottom: 8px;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.img {
+  height: 160px;
+  width: 160px;
+  border-radius: 100%;
+}
+
+.bio {
+  font-size: 12px;
+  margin: 16px 0;
+  color: #4f4f4f;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.margin {
+  margin: 8px 0;
+}
+
+.value {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.align_center {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.pill {
+  padding: 8px;
+  background-color: blanchedalmond;
+  border-radius: 8px;
+
+  &:not(:first-of-type) {
+    margin-left: 8px;
+  }
+}
+
+.extras {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  margin: 16px 0;
+}
