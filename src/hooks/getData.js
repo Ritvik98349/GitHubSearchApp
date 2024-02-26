@@ -7,7 +7,7 @@ function getData(setData = () => {}) {
     params: { q: val, sort: "followers", order: "desc" },
     headers: {
       Accept: "application/vnd.github+json",
-      Authorization: "Bearer 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",
+      Authorization: "Bearer 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",
       "X-GitHub-Api-Version": "2022-11-28",
     },
   });
