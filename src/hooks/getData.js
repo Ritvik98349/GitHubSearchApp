@@ -4,7 +4,7 @@ function getData(setData = () => {}) {
   const getOptions = (val) => ({
     method: "GET",
     url: "https://api.github.com/search/users",
-    params: { q: val || "a", sort: "followers", order: "desc" },
+    params: { q: val, sort: "followers", order: "desc" },
     headers: {
       Accept: "application/vnd.github+json",
       Authorization: "Bearer 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",
